@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Matching Mockups #003</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <header>
-          <h1>New Account</h1>
-        </header>
-        <main>
-          <form actions="">
-            <label>Name</label>
-            <input id="" type=text placeholder="John Doe"/>
-            <label>Email</label>
-            <input class="" id="" type=text placeholder="JohnDoe@example.com"/>
-            <label>Password</label>
-            <input id="" type=password placeholder="Password"/>
-            <label>Confirm Password</label>
-            <input id="" type=password placeholder="Confirm Password"/>
-            <button>Create Account</button>
-            <a class="sign-in">Already have an account? Sign In</a>
-          </form>
-        </main>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Matching Mockups #003</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-bar">
+      <h1 class="app-bar__title">New Account</h1>
+    </header>
+    <main class="form-wrapper">
+      <form action="" class="signup-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="John Smith" />
+        <label class="required" for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="JohnSmith@example.com"
+          required
+        />
+        <label class="required" for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          minlength="12"
+          required
+        />
+        <span class="validity"></span>
+        <label class="required" for="password-repeat">Confirm Password</label>
+        <input
+          type="password"
+          id="password-repeat"
+          placeholder="Confirm Password"
+          minlength="12"
+          required
+        />
+        <span class="validity"></span>
+        <button type="submit">Create Account</button>
+        <a href="" class="sign-in">Already have an account? Sign In</a>
+      </form>
+    </main>
+  </body>
 </html>

@@ -1,24 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
 
 body {
   margin: 0;
-  padding: 0;
-  font-family:"Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font: 1.0rem;
 }
 
-header {
-  text-align: center;
+h1, button{
+  font-weight: 700;
+  color: #ffffff;
 }
-main {
+
+.app-bar {
+  background-color: #492140;
+  text-align: center;
+  padding: 2vh;
+}
+
+.app-bar__title {
+  margin: 0;
+  font-size: 2.0rem;
+}
+
+.form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-form {
+
+.signup-form {
   display: flex;
   flex-direction: column;
   width: 85vw;
   height: 85vh;
-  
+  margin-top: 2vh
+}
 
+label {
+  margin: 16px 0 0 4px;
+}
+
+input {
+  height: 56px;
+  margin: 11px 0 4px 0;
+  padding: 8px;
+  border: 1px solid #d8dbdc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  opacity: .7;
+  font-size: 1.0rem;
+}
+
+input:invalid+span::after {
+  margin-left: 4px;
+  padding: 0;
+  color: red;
+  font-size: .75rem;
+  content: "Minimum length: 12 characters";
+}
+
+.required::after{
+  content: "*";
+  margin-left: 2px;
+  color: red;
+}
+
+button {
+  height: 8vh;
+  margin-top: 6vh;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.1);
+  background-color: #DA1BB0;
+}
+
+.sign-in {
+  text-align: center;
+  margin-top: 16px;
+  font-size: .75rem;
 }
