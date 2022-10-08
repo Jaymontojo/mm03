@@ -4,23 +4,22 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font: 1.0rem;
 }
 
-h1, button{
+h1, button {
   font-weight: 700;
-  color: #ffffff;
+  color: white;
 }
 
-.app-bar {
-  background-color: #492140;
+.app-bar{
   text-align: center;
+  background-color: #492140;
   padding: 2vh;
 }
 
 .app-bar__title {
   margin: 0;
-  font-size: 2.0rem;
+  font-size: 2.5rem;
 }
 
 .form-wrapper {
@@ -34,43 +33,45 @@ h1, button{
   flex-direction: column;
   width: 85vw;
   height: 85vh;
-  margin-top: 2vh
+  margin: 2vh;
 }
 
 label {
   margin: 16px 0 0 4px;
+  font-size: 1.25rem;
 }
 
 input {
   height: 56px;
-  margin: 11px 0 4px 0;
-  padding: 8px;
+  margin: 16px 0 0 0;
+  padding: 16px;
   border: 1px solid #d8dbdc;
   border-radius: 8px;
   box-sizing: border-box;
 }
 
 input::placeholder {
-  opacity: .7;
-  font-size: 1.0rem;
+  opacity: .70;
+  font-size: 1.25rem;
 }
 
 input:invalid+span::after {
   margin-left: 4px;
   padding: 0;
-  color: red;
   font-size: .75rem;
+  color: red;
   content: "Minimum length: 12 characters";
+
 }
 
-.required::after{
+.required::after {
   content: "*";
   margin-left: 2px;
   color: red;
 }
 
 button {
-  height: 8vh;
+  height: 7vh;
   margin-top: 6vh;
   font-size: 1.5rem;
   border-radius: 8px;
@@ -84,3 +85,4 @@ button {
   margin-top: 16px;
   font-size: .75rem;
 }
+
